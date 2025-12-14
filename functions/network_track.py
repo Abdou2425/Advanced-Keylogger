@@ -1,8 +1,11 @@
 import psutil
 import socket
 import time
+import os
+from dotenv import load_dotenv
+load_dotenv()  
 
-file_path = "C:\\Users\\PC-Service\\OneDrive\\Desktop\\project\\files\\"
+file_path = os.getenv("FILE_PATH")
 extend = "\\"
 network_information = "network_info.txt"
 stop_network_tracking = False  # Global variable to control network tracking

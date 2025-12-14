@@ -1,8 +1,11 @@
 import platform
+import os
 import socket
 from requests import get
+from dotenv import load_dotenv
+load_dotenv()  
 
-file_path = "C:\\Users\\PC-Service\\OneDrive\\Desktop\\project\\files\\"
+file_path = os.getenv("FILE_PATH")
 extend = "\\"
 
 #get computer information

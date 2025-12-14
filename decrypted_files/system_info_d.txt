@@ -1,6 +1,0 @@
-Public IP Address : 41.108.175.32
-Processor: Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
-System: Windows 10.0.19045
-Machine: AMD64
-Hotname: DESKTOP-2VLRT79
-Private IP: 192.168.56.1

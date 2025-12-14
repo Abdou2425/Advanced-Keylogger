@@ -1,6 +1,0 @@
-[NETWORK] Connected: Interface: Ethernet 2, IP: 192.168.56.1, MAC: 45:74:68:65:72:6e:65:74:20:32
-[NETWORK] Connected: Interface: Ethernet, IP: 169.254.19.100, MAC: 45:74:68:65:72:6e:65:74
-[NETWORK] Connected: Interface: Wi-Fi, IP: 192.168.1.6, MAC: 57:69:2d:46:69
-[NETWORK] Connected: Interface: Local Area Connection* 10, IP: 169.254.154.210, MAC: 4c:6f:63:61:6c:20:41:72:65:61:20:43:6f:6e:6e:65:63:74:69:6f:6e:2a:20:31:30
-[NETWORK] Connected: Interface: Local Area Connection* 1, IP: 169.254.185.71, MAC: 4c:6f:63:61:6c:20:41:72:65:61:20:43:6f:6e:6e:65:63:74:69:6f:6e:2a:20:31
-[NETWORK] Connected: Interface: Loopback Pseudo-Interface 1, IP: 127.0.0.1, MAC: 4c:6f:6f:70:62:61:63:6b:20:50:73:65:75:64:6f:2d:49:6e:74:65:72:66:61:63:65:20:31

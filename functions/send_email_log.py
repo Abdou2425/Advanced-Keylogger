@@ -4,9 +4,11 @@ from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
 import smtplib
+from dotenv import load_dotenv
+load_dotenv()
 
-email_address = "gamingabdou467@gmail.com"
-password = "ccpr kopo wtoh jsni"
+email_address = os.getenv("EMAIL_ADDRESS")
+password = os.getenv("EMAIL_PASS")
 
 def send_folder(folder_path, toaddr):
 

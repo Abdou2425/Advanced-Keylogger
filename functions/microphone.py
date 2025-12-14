@@ -1,7 +1,10 @@
 import sounddevice as sd
+import os
 from scipy.io.wavfile import write
+from dotenv import load_dotenv
+load_dotenv()  
 
-file_path = "C:\\Users\\PC-Service\\OneDrive\\Desktop\\project\\files\\"
+file_path = os.getenv("FILE_PATH")
 extend = "\\"
 microphone_time = 10  # Set the duration for microphone recording
 audio_information = "audio.wav"
