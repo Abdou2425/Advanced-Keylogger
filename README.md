@@ -136,7 +136,7 @@ python Keylogger.py
    ```bash
     cd functions
     ```
-2. Key cinfiguration:
+2. Key configuration:
 - Get the generated key and past it in the key variable inside the _encrypt_files.py script.
 3. Run the _encrypt_files.py:
 This will:
