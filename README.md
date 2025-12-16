@@ -123,15 +123,30 @@ python Keylogger.py
 - Extract system and network information
 - Store all collected data inside the files/ directory
 - Send the collected data to the configured email address
-### 🔹 2. Encrypt Collected Files
+
+### 🔹 2. Generate an Encryption Key
+1. navigate to cryptography folder:
+     ```bash
+cd cryptography
+      ```
+2. run the generation key script.
+
+### 🔹 3. Encrypt Collected Files
 1. Navigate to functions folder:
    ```bash
 cd functions
-```
-2. Run the _encrypt_files.py:
+    ```
+2. Key cinfiguration:
+- Get the generated key and past it in the key variable inside the _encrypt_files.py script.
+3. Run the _encrypt_files.py:
 This will:
 - Encrypt all files located in the files/ folder
 - Move the encrypted versions to the encrypted_files/ directory.
-### 🔹 3. Generate an Encryption Key
-
-
+### 🔹 4. Decrypt Encrypted Files
+1. Ensure a valid encryption key is available
+2. Put the enccryption key inside the key variable in the script decrypt_files.py
+3. Run the decryption script : you will get all the decrypted files inside the decrypted_files folder
+## 📜 License
+This project was created for **educational purposes** as part of a **Third-Year Python module**.
+It is intended for ethical learning and cybersecurity awareness only.
+Unauthorized or malicious use is prohibited.
