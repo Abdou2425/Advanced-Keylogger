@@ -127,14 +127,14 @@ python Keylogger.py
 ### 🔹 2. Generate an Encryption Key
 1. navigate to cryptography folder:
      ```bash
-cd cryptography
-      ```
+     cd cryptography
+     ```
 2. run the generation key script.
 
 ### 🔹 3. Encrypt Collected Files
 1. Navigate to functions folder:
    ```bash
-cd functions
+    cd functions
     ```
 2. Key cinfiguration:
 - Get the generated key and past it in the key variable inside the _encrypt_files.py script.
